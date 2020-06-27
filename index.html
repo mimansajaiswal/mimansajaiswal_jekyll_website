@@ -1,1888 +1,767 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+    <head>
+        <title>Mimansa Jaiswal</title>
 
-<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.1">
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Nelson Bighetti">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Professor of Artificial Intelligence">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://mimansajaiswal.github.io/">
-
-  
-
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
+        <meta name="author" content="Abhishek Das">
+        <meta name="keywords" content="yoda, abhshkdz, abhishek das, sdslabs, jekyll, hacker, developer, pianist, iit roorkee, abdasuee, deep learning, computer vision, neural networks, georgia tech, virginia tech, machine learning">
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <meta name="description" content="CS PhD student at Georgia Tech. Learning to build machines that can see, think, talk and act.">
         
-      
-    
+        <link rel="alternate" type="application/atom+xml" title="Abhishek Das" href="https://abhishekdas.com/atom.xml" />
+        <!--Open Graph Related Stuff-->
+        <meta property="fb:app_id" content="1666933880208467"/>
+        <meta property="og:title" content=""/>
+        <meta property="og:url" content="http://abhishekdas.com/"/>
+        
+        <meta name='og:description' content='CS PhD student at Georgia Tech. Learning to build machines that can see, think, talk and act.'/>
+        
+        
+        <meta property="og:site_name" content="Abhishek Das"/>
+        
+        <meta property="og:image" content="http://abhishekdas.com/img/avatar.jpg"/>
+        <meta property="og:image:url" content="http://abhishekdas.com/img/avatar.jpg"/>
+        
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-    
+        <!--Twitter Card Stuff-->
+        <meta name='twitter:card' content='summary_large_image'/>
+        
+        <meta name='twitter:title' content='Abhishek Das'/>
+        
+        
+        <meta name='twitter:image' content='http://abhishekdas.com/img/avatar.jpg'/>
+        
+        <meta name='twitter:creator' content='@abhshkdz'/>
+        <meta name='twitter:site' content='@abhshkdz'/>
+        <meta name='twitter:url' content='http://abhishekdas.com/'/>
+        
+        <meta name='twitter:description' content='CS PhD student at Georgia Tech. Learning to build machines that can see, think, talk and act.'/>
+        
 
-    
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main_1548935627.css">
+        <!--[if IE 7]>
+            <html class="ie7">
+            <link rel="stylesheet" type="text/css" href="/css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <!--[if IE 8]><html class="ie8"> <![endif]-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-  
+        <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+        <link rel="shortcut icon" href="/ico/favicon-96x96.png">
+        <link rel="manifest" href="/ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-  
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  
+        <!--Authorship-->
+        <link rel="me" href="//plus.google.com/u/0/100610196494221761914/">
+        <link rel="me" href="//facebook.com/abhshkdz">
 
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
 
-  
-
-
-
-
-  
-
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Academic">
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="https://mimansajaiswal.github.io/">
-
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="og:site_name" content="Academic">
-  <meta property="og:url" content="https://mimansajaiswal.github.io/">
-  <meta property="og:title" content="Academic">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="https://mimansajaiswal.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://mimansajaiswal.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
-  
-    
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://mimansajaiswal.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://mimansajaiswal.github.io/"
-}
-</script>
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>Academic</title>
-
-</head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
+    </head>
+    <body>
+        <!-- Header
+            ================================================== -->
+        <div class="top-strip"></div>
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 id="name-block"><a href="/">Abhishek Das</b></a></h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <ul class="nav-bar">
+                            <li><a href="/#/bio">Bio</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1nObeNzl-sTy8I5QN1Jv8wscebKLv-6RY/view?usp=sharing">CV</a></li>
+                            <!-- <li><a href="/archive">Blog</a></li> -->
+                            <li><a href="/#/publications">Publications</a></li>
+                            <li class="hide-link-on-small-screens"><a href="/#/talks">Talks</a></li>
+                            <li class="hide-link-on-small-screens"><a href="/bookshelf">Bookshelf</a></li>
+                            <!-- <li class="hide-link-on-small-screens"><a href="/#/projects">Side projects</a></li> -->
+                            <li><a target="_blank" href="//github.com/abhshkdz">GitHub</a></li>
+                            <li><a target="_blank" href="https://scholar.google.com/citations?user=t6exkOAAAAAJ">Google Scholar</a></li>
+                            <li><a target="_blank" href="//twitter.com/abhshkdz">Twitter</a></li>
+                            <!-- <li><a target="_blank" href="//x.abhishekdas.com">Tumblr</a></li> -->
+                            <li class="hide-link-on-small-screens"><a target="_blank" href="//mastodon.social/web/accounts/1011404">Mastodon</a></li>
+                            <li class="hide-link-on-small-screens"><a target="_blank" href="//instagram.com/abhshkdz">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <article class="post">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="content"></h1>
         </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-  
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    
-    
-      <a class="navbar-brand" href="/">Academic</a>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
     </div>
+    <section class="post-content">
+        <div class="row">
+    <div class="col-sm-6 col-xs-12">
+        <img src="/img/cover2.jpg" />
+    </div>
+    <div class="col-sm-6 col-xs-12" style="margin-bottom: 0;">
+        Research Scientist<br />
+        Facebook AI Research<br />
+        abhshkdz at fb dot com
+    </div>
+</div>
+<hr />
 
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
+<p><a name="/news"></a></p>
 
-      
-      <li class="nav-item">
-        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-    
-    
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="demo" class="home-section wg-blank dark  " style="background-image: linear-gradient(DarkGreen, ForestGreen);padding: 20px 0 20px 0;" >
-    <div class="container">
-      
-
-
-<div class="row">
-  
-    <div class="col-lg-12">
-      <h1>Academic Kickstart</h1>
-      
-      <p>Welcome to the <strong>Academic Kickstart</strong> template!</p>
-
-<p>Follow our <a href="https://sourcethemes.com/academic/docs/get-started/" target="_blank">Getting Started</a> and <a href="https://sourcethemes.com/academic/docs/widgets/" target="_blank">Page Builder</a> guides to easily personalize the template and then <a href="https://sourcethemes.com/academic/docs/managing-content/" target="_blank">add your own content</a>.</p>
-
-<p>For inspiration, check out <a href="https://sourcethemes.com/academic/docs/install/#demo-content" target="_blank">the Markdown files</a> which power the <a href="https://academic-demo.netlify.com/" target="_blank">personal demo</a>. The easiest way to publish your new site to the internet is with <a href="https://sourcethemes.com/academic/docs/deployment/" target="_blank">Netlify</a>.</p>
+<h1 id="news">News</h1>
 
 <ul>
-<li><a href="https://sourcethemes.com/academic/docs/" target="_blank">View the documentation</a></li>
-<li><a href="http://discuss.gohugo.io/" target="_blank">Ask a question</a></li>
-<li><a href="https://github.com/gcushen/hugo-academic/issues" target="_blank">Request a feature or report a bug</a></li>
-<li>Updating? View the <a href="https://sourcethemes.com/academic/docs/update/" target="_blank">Update Guide</a> and <a href="https://sourcethemes.com/academic/updates/" target="_blank">Release Notes</a></li>
-<li>Support development of Academic:
-
-<ul>
-<li><a href="https://paypal.me/cushen" target="_blank">Donate a coffee</a></li>
-<li><a href="https://www.patreon.com/cushen" target="_blank">Become a backer on Patreon</a></li>
-<li><a href="https://www.redbubble.com/people/neutreno/works/34387919-academic" target="_blank">Decorate your laptop or journal with an Academic sticker</a></li>
-<li><a href="https://academic.threadless.com/" target="_blank">Wear the T-shirt</a></li>
-</ul></li>
+  <li>[Nov 2019] Organizing the <a href="http://visualqa.org/workshop.html">Visual Question Answering and Dialog workshop at CVPR 2020</a>.</li>
+  <li>[Sep 2019] Organizing the <a href="https://vigilworkshop.github.io">Visually-Grounded Interaction &amp; Language Workshop at NeurIPS</a>.</li>
+  <li>[Jun 2019] Presenting <a href="#/multi-agent-comm">Targeted Multi-Agent Communication</a> as an oral at ICML 2019 (<a href="https://www.facebook.com/icml.imls/videos/444326646299556/">Video</a>).</li>
+  <li>[Mar 2019] Co-founded <a href="https://caliper.ai">Caliper</a>. Caliper helps recruiters evaluate practical AI skills.</li>
+  <li>[Feb 2019] My work was featured in this <a href="https://www.ic.gatech.edu/news/617061/see-and-say-abhishek-das-working-provide-crucial-communication-tools-intelligent-agents">wonderful article by Georgia Tech</a>.</li>
+  <li>[Jan 2019] Awarded the <a href="https://research.fb.com/announcing-the-2019-facebook-fellows-and-emerging-scholars/">Facebook Graduate Fellowship</a>.</li>
+  <li>[Jan 2019] Awarded the Microsoft Research PhD Fellowship (declined).</li>
+  <li>[Jan 2019] Awarded the NVIDIA Graduate Fellowship (declined).</li>
+  <li>[Jan 2019] Organizing the <a href="https://visualdialog.org/challenge/2019">2nd Visual Dialog Challenge</a>!</li>
+  <li>[Oct 2018] Presenting <a href="#/eqa-modular">Neural Modular Control for Embodied Question Answering</a> as a spotlight at CoRL 2018 (<a href="https://www.youtube.com/watch?v=xoHvho-YRgs&amp;t=7330">Video</a>).</li>
+  <li>[Sep 2018] Presenting <a href="https://visualdialog.org/challenge/2018#winners">results and analysis of the 1st Visual Dialog Challenge</a> at ECCV 2018.</li>
+  <li>[Jul 2018] Presenting a <a href="https://lvatutorial.github.io/">tutorial on Connecting Language and Vision to Actions</a> at <a href="http://acl2018.org/tutorials/#connecting-language-and-vis">ACL 2018</a>.</li>
+  <li>[Jun 2018] Organizing the 1st <a href="https://visualdialog.org/challenge/2018">Visual Dialog Challenge</a>!</li>
+  <li>[Jun 2018] Presenting <a href="#/embodied-qa">Embodied Question Answering</a> as an oral at CVPR 2018 (<a href="https://youtu.be/gz2VoDrvX-A?t=1h19m58s">Video</a>).</li>
+  <li>[Jun 2018] Organizing the <a href="http://visualqa.org/workshop.html">VQA Challenge and Visual Dialog Workshop at CVPR 2018</a>.</li>
+  <li>[Mar 2018] Speaking on <a href="https://embodiedqa.org/">Embodied Question Answering</a> at <a href="https://2018gputechconf.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=152715">NVIDIA GTC</a> (<a href="http://on-demand.gputechconf.com/gtc/2018/video/S8582/">Video</a>).</li>
+  <li>[Dec 2017] Awarded the <a href="https://adoberesearch.ctlprojects.com/fellowship/previous-fellowship-award-winners/">Adobe Research Fellowship</a>. (<a href="https://www.ic.gatech.edu/news/601084/new-research-fellowships-offer-two-students-funding-access-adobes-creative-cloud">Department’s news story</a>)</li>
+  <li>[Dec 2017] Awarded the <a href="https://snapresearchfellowship.splashthat.com/">Snap Inc. Research Fellowship</a>. (<a href="https://www.ic.gatech.edu/news/600684/three-ic-students-earn-snap-research-awards">Department’s news story</a>)</li>
+  <li>[Oct 2017] Presenting our paper on <a href="#/visdial-rl">Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning</a> as an oral at ICCV 2017 (<a href="https://www.youtube.com/watch?v=R4hugGnNr7s">Video</a>).</li>
+  <li>[Jul 2017] Speaking about our work on <a href="//visualdialog.org">Visual Dialog</a> at the <a href="http://visualqa.org/workshop.html">Visual Question Answering Challenge Workshop</a>, CVPR 2017 (<a href="https://youtu.be/KAlGWMJnWyc?t=26m56s">Video</a>).</li>
+  <li>[Jul 2017] Presenting our paper on <a href="#/visdial">Visual Dialog</a> as a spotlight at CVPR 2017 (<a href="https://www.youtube.com/watch?v=I9OlorMh7wU">Video</a>).</li>
 </ul>
 
-<div class="alert alert-note">
-  <div>
-    <p>This homepage section is an example of adding <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank">elements</a> to the <a href="https://sourcethemes.com/academic/docs/widgets/" target="_blank"><em>Blank</em> widget</a>.</p>
-
-<p>Backgrounds can be applied to any section. Here, the <em>background</em> option is set give a <em>color gradient</em>.</p>
-
-<p><strong>To remove this section, delete <code>content/home/demo.md</code>.</strong></p>
-
-  </div>
+<div id="read-more-button">
+    <a nohref="">Read more</a>
 </div>
 
+<hr />
+
+<p><a name="/bio"></a></p>
+
+<h1 id="bio">Bio</h1>
+
+<p>I am a Research Scientist at Facebook AI Research (FAIR).
+Previously, I was a Computer Science PhD student at Georgia Tech, advised by <a href="///www.cc.gatech.edu/~dbatra/">Dhruv Batra</a>,
+and working closely with <a href="//www.cc.gatech.edu/~parikh/">Devi Parikh</a>.
+My PhD research was supported by fellowships from <a href="https://research.fb.com/announcing-the-2019-facebook-fellows-and-emerging-scholars/">Facebook</a>, <a href="https://adoberesearch.ctlprojects.com/fellowship/previous-fellowship-award-winners/">Adobe</a>, and <a href="https://snapresearchfellowship.splashthat.com/">Snap</a>.</p>
+
+<p>My research focuses on deep learning
+and its applications in climate change, and in building agents that can <i>see</i> (computer vision),
+<i>think</i> (reasoning/interpretability), <i>talk</i> (language modeling), and
+<i>act</i> (reinforcement learning).
+My CV is available <a href="https://drive.google.com/file/d/1nObeNzl-sTy8I5QN1Jv8wscebKLv-6RY/view?usp=sharing">here</a>.</p>
+
+<div class="row" id="timeline-logos">
+    <div class="col-xs-2">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a href="//iitr.ac.in"><img src="/img/logos/iitr.jpg" /></a>
+        </div>
+        <div class="logo-desc">
+            IIT Roorkee<br />
+            2011 - 2015
+        </div>
     </div>
-  
+    <div class="col-xs-3">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a href="//qbi.uq.edu.au"><img style="width:120px;" src="/img/logos/uq.png" /></a>
+        </div>
+        <div class="logo-desc">
+            Queensland Brain Institute<br />
+            Summer 2015
+        </div>
+    </div>
+    <!-- <div class="col-xs-2">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a href="//vt.edu"><img src="/img/logos/vt.png"></a>
+        </div>
+        <div class="logo-desc">
+            Virginia Tech<br>
+            2015 - 2016
+        </div>
+    </div> -->
+    <div class="col-xs-2">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a target="_blank" href="//gatech.edu"><img src="/img/logos/gatech.png" /></a>
+        </div>
+        <div class="logo-desc">
+            Georgia Tech<br />
+            2017 - Present
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a target="_blank" href="//research.fb.com/category/facebook-ai-research/"><img style="width:160px;" src="/img/logos/fair3.png" /></a>
+        </div>
+        <div class="logo-desc">
+            Facebook AI Research<br />
+            S2017, W2018, S2018
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="logo-wrap">
+            <span class="helper"></span>
+            <a target="_blank" href="//deepmind.com"><img style="width:120px;" src="/img/logos/deepmind.png" /></a>
+        </div>
+        <div class="logo-desc">
+            DeepMind<br />
+            W2019
+        </div>
+    </div>
 </div>
 
-    </div>
-  </section>
+<p>I’ve spent three wonderful semesters as an intern at Facebook AI Research — Summer 2017 and Spring 2018 at Menlo Park, working with <a href="https://gkioxari.github.io/">Georgia Gkioxari</a>, <a href="https://research.fb.com/people/parikh-devi/">Devi Parikh</a> and <a href="https://research.fb.com/people/batra-dhruv/">Dhruv Batra</a> on training embodied agents for navigation and question-answering in simulated environments (see <a href="https://embodiedqa.org/">embodiedqa.org</a>), and Summer 2018 at Montréal, working with <a href="https://research.fb.com/people/rabbat-mike/">Mike Rabbat</a> and <a href="https://www.cs.mcgill.ca/~jpineau/">Joelle Pineau</a> on emergent communication protocols in large-scale multi-agent reinforcement learning.</p>
 
-  
-  
-  
+<p>In 2019, I was fortunate to get the opportunity to spend time at DeepMind in London working on grounded language learning with <a href="felix-hill">Felix Hill</a>, <a href="laura-rimell">Laura Rimell</a>, and <a href="stephen-clark">Stephen Clark</a>, and at Tesla Autopilot in Palo Alto working on differentiable neural architecture search with <a href="andrej-karpathy">Andrej Karpathy</a>.</p>
 
-  
+<p>Prior to joining grad school, I worked on neural coding in zebrafish tectum
+as an intern under <a href="//www.qbi.uq.edu.au/professor-geoffrey-goodhill">Prof. Geoffrey Goodhill</a> and <a href="//researchers.uq.edu.au/researcher/2490">Lilach Avitan</a>
+at the <a href="http://cns.qbi.uq.edu.au/">Goodhill Lab</a>, Queensland Brain Institute.</p>
 
-  
+<p>I graduated from <a href="http://iitr.ac.in/">Indian Institute of Technology Roorkee</a> in 2015.
+During my undergrad years, I’ve been selected twice for
+Google Summer of Code (<a href="/posts/summer-of-code/">2013</a> and <a href="/posts/gsoc-reunion-2014/">2014</a>),
+won several hackathons and security contests (<a href="//blog.sdslabs.co/2012/09/hacku">Yahoo! HackU!</a>,
+<a href="//blog.sdslabs.co/2014/02/code-fun-do">Microsoft Code.Fun.Do.</a>, Deloitte CCTC <a href="//www.facebook.com/SDSLabs/posts/527540147292475">2013</a> and <a href="/posts/deloitte-cctc-3/">2014</a>),
+and been an active member of <a href="//sdslabs.co/">SDSLabs</a>.</p>
 
-  
+<p>On the side, I built <a href="//github.com/abhshkdz/neural-vqa">neural-vqa</a>, an efficient Torch implementation for visual question answering (and its extension <a href="//github.com/abhshkdz/neural-vqa-attention">neural-vqa-attention</a>),
+and maintain <a href="http://aideadlin.es/">aideadlin.es</a> (countdowns to a bunch of CV/NLP/ML/AI conference deadlines),
+and several other side projects (<a href="//github.com/abhshkdz/HackFlowy">HackFlowy</a>, <a href="//github.com/abhshkdz/graf">graf</a>, <a href="//github.com/abhshkdz">etc</a>).
+I also help maintain <a href="//erdos.sdslabs.co/">Erdős</a>, a competitive math learning platform I created during my undergrad.
+I often <a href="//twitter.com/abhshkdz">tweet</a>, <a href="https://mastodon.social/web/accounts/1011404">toot</a>, and post pictures from my <a href="https://conquer.earth/abhshkdz">travels</a> on <a href="//instagram.com/abhshkdz">Instagram</a> and <a href="http://x.abhishekdas.com/">Tumblr</a>.</p>
 
-  
+<p><a href="/archive">Blog posts from a previous life.</a></p>
 
-  
+<hr />
 
-  
-  
+<p><a name="/publications"></a></p>
 
-  
-  
-  
+<h1 id="publications">Publications</h1>
 
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="about" class="home-section wg-about   "  >
-    <div class="container">
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="portrait" src="/authors/admin/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2>Nelson Bighetti</h2>
-        <h3>Professor of Artificial Intelligence</h3>
-
-        
-        <h3>
-          
-          <span>Stanford University</span>
-          
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://github.com/gcushen" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>Biography</h1>
-
-    <p>Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</p>
-
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Artificial Intelligence</li>
-          
-          <li>Computational Linguistics</li>
-          
-          <li>Information Retrieval</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Artificial Intelligence, 2012</p>
-              <p class="institution">Stanford University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MEng in Artificial Intelligence, 2009</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Artificial Intelligence, 2008</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="skills" class="home-section wg-featurette   "  >
-    <div class="container">
-      
-
-
-<div class="row featurette">
-  
-  <div class="col-md-12 section-heading">
-    <h1>Skills</h1>
-    
-  </div>
-  
-
-  
-
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
-    <h3>R</h3>
-    <p>90%</p>
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-    <h3>Statistics</h3>
-    <p>100%</p>
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-camera-retro"></i></div>
-    <h3>Photography</h3>
-    <p>10%</p>
-  </div>
-  
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="experience" class="home-section wg-experience   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border exp-fill">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">CEO</h4>
-            <h4 class="card-title exp-company text-muted my-0">GenCoin</h4>
-            <div class="text-muted exp-meta">
-              Jan 2017 –
-              
-                Present
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
-            </div>
-            <div class="card-text">Responsibilities include:</p>
-
-<ul>
-<li>Analysing</li>
-<li>Modelling</li>
-<li>Deploying
-<br /></li>
-</ul></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Professor</h4>
-            <h4 class="card-title exp-company text-muted my-0">University X</h4>
-            <div class="text-muted exp-meta">
-              Jan 2016 –
-              
-                Dec 2016
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
-            </div>
-            <div class="card-text">Taught electronic engineering and researched semiconductor physics.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="accomplishments" class="home-section wg-accomplishments   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Accomplish&shy;ments</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Neural Networks and Deep Learning</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
-
-            Oct 2018
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><a href="https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Blockchain Fundamentals</h4></a><div class="card-subtitle my-0 article-metadata"><a href="https://www.edx.org" target="_blank" rel="noopener">edX</a><span class="middot-divider"></span>
-
-            Mar 2018
-            
-          </div>
-
-          
-            <div class="card-text">Formulated informed blockchain models, hypotheses, and use cases.</div>
-          
-
-          
-            <a class="card-link" href="https://www.edx.org" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Object-Oriented Programming in R: S3 and R6 Course</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.datacamp.com" target="_blank" rel="noopener">DataCamp</a><span class="middot-divider"></span>
-
-            Jul 2017
-            
-            – Dec 2017
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.datacamp.com" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
-        </div>
-      </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="posts" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Posts</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Projects</h1>
-    
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-
-
-    
-
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="talks" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="featured" class="home-section wg-featured   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Featured Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="publications" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    <div class="alert alert-note">
-  <div>
-    Quickly discover relevant content by <a href="https://mimansajaiswal.github.io/publication/" target="_blank">filtering publications</a>.
-  </div>
-</div>
-
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="tags" class="home-section wg-tag-cloud   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Popular Topics</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="contact" class="home-section wg-contact   "  >
-    <div class="container">
-      
-
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-    
-      
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/test@example.org">
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-    
-
-    <ul class="fa-ul">
-
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone"><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
-      </li>
-      
-
-      
-      
-        
-        <li>
-          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-          <span id="person-address">450 Serra Mall, Stanford, CA 94305</span>
-        </li>
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
-        <span>Enter Building 1 and take the stairs to Office 200 on Floor 2</span>
-      </li>
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
-        <span>Monday 10:00 to 13:00<br>Wednesday 09:00 to 10:00</span>
-      </li>
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
-        <a href="https://calendly.com" target="_blank" rel="noopener">Book an appointment</a>
-      </li>
-      
-
-      
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
-        <a href="https://twitter.com/Twitter" target="_blank" rel="noopener">DM Me</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      <li>
-        <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
-        <a href="skype:echo123?call" >Skype Me</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-keybase fa-2x" aria-hidden="true"></i>
-        <a href="https://keybase.io/" target="_blank" rel="noopener">Chat on Keybase</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fas fa-comments fa-2x" aria-hidden="true"></i>
-        <a href="https://discourse.gohugo.io" target="_blank" rel="noopener">Discuss on Forum</a>
-      </li>
-      
-
-    </ul>
-
-    
-    <div class="d-none">
-      <input id="map-provider" value="2">
-      <input id="map-lat" value="37.4275">
-      <input id="map-lng" value="-122.1697">
-      <input id="map-dir" value="450 Serra Mall, Stanford, CA 94305">
-      <input id="map-zoom" value="15">
-      <input id="map-api-key" value="">
-    </div>
-    <div id="map"></div>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-
-      
-
-    
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.0e040a4c8b8532fc173c2fe4328906d0.js"></script>
-
-    
-
-
-
-
-
-
-  
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
+<p><a name="/visdial-bert"></a></p>
+<h2 class="pubt">Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline</h2>
+<p class="pubd">
+    <span class="authors">Vishvak Murahari, Dhruv Batra, Devi Parikh, Abhishek Das</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1912.02379">Paper</a>
+        <a target="_blank" href="https://github.com/vmurahari3/visdial-bert">Code</a>
     </span>
-    
-  </p>
-</footer>
+</p>
+<p><img src="/img/visdial/visdial-bert.png" /></p>
+<hr />
 
-  </div>
-  
+<p><a name="/ds-vic"></a></p>
+<h2 class="pubt">IR-VIC: Unsupervised Discovery of Sub-goals for Transfer in RL</h2>
+<p class="pubd">
+    <span class="authors">Nirbhay Modhe, Prithvijit Chattopadhyay, Mohit Sharma, Abhishek Das, Devi Parikh, Dhruv Batra, Ramakrishna Vedantam</span><br />
+    <span class="conf">IJCAI-PRICAI 2020, ICLR 2019 Task-Agnostic RL Workshop</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1907.10580">Paper</a>
+    </span>
+</p>
+<p><img src="/img/ds-vic/teaser.jpg" /></p>
+<hr />
 
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
+<p><a name="/visdial-rl-plus-plus"></a></p>
+<h2 class="pubt">Improving Generative Visual Dialog by Answering Diverse Questions</h2>
+<p class="pubd">
+    <span class="authors">Vishvak Murahari, Prithvijit Chattopadhyay, Dhruv Batra, Devi Parikh, Abhishek Das</span><br />
+    <span class="conf">EMNLP 2019</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1909.10470">Paper</a>
+        <a target="_blank" href="https://github.com/vmurahari3/visdial-diversity">Code</a>
+    </span>
+</p>
+<p><img src="/img/visdial/visdial-rl-plus-plus.png" /></p>
+<hr />
+
+<p><a name="/multi-agent-comm"></a></p>
+<h2 class="pubt">TarMAC: Targeted Multi-Agent Communication</h2>
+<p class="pubd">
+    <span class="authors">Abhishek Das, Théophile Gervet, Joshua Romoff, Dhruv Batra, Devi Parikh, Michael Rabbat, Joelle Pineau</span><br />
+    <span class="conf">ICML 2019</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1810.11187">Paper</a>
+        <a target="_blank" href="https://drive.google.com/open?id=1ZjKogiYrqFVuBmad3IzkNW18pvP2QcIG">Slides</a>
+    </span>
+</p>
+<p><img src="/img/multi-agent-comm/model.jpg" />
+<br /><br />
+<img src="/img/multi-agent-comm/shapes.gif" /></p>
+<hr />
+
+<p><a name="/eqa-mp3d"></a></p>
+<h2 class="pubt">Embodied Question Answering in Photorealistic Environments with Point Clouds</h2>
+<p class="pubd">
+    <span class="authors">
+        Erik Wijmans*, Samyak Datta*, Oleksandr Maksymets*, Abhishek Das, Georgia Gkioxari, Stefan Lee, Irfan Essa, Devi Parikh, Dhruv Batra
+    </span><br />
+    <span class="conf">CVPR 2019 (Oral)</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1904.03461">Paper</a>
+    </span>
+</p>
+<p><img src="/img/eqa/eqa-mp3d.png" /></p>
+<hr />
+
+<p><a name="/avsd"></a></p>
+<h2 class="pubt">Audio-Visual Scene-Aware Dialog</h2>
+<p class="pubd">
+    <span class="authors">
+        Huda Alamri, Vincent Cartillier, Abhishek Das,
+        Jue Wang, Stefan Lee, Peter Anderson, Irfan Essa, Devi Parikh,
+        Dhruv Batra, Anoop Cherian, Tim K. Marks, Chiori Hori
+    </span><br />
+    <span class="conf">CVPR 2019</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1901.09107">Paper</a>
+        <a target="_blank" href="https://github.com/batra-mlp-lab/avsd">Code</a>
+        <a target="_blank" href="http://video-dialog.com/">video-dialog.com</a>
+    </span>
+</p>
+<p><img src="/img/avsd/avsd.jpg" /></p>
+<hr />
+
+<p><a name="/avsd_icassp"></a></p>
+<h2 class="pubt">End-to-end Audio Visual Scene-Aware Dialog Using Multimodal Attention-based Video Features</h2>
+<p class="pubd">
+    <span class="authors">
+            Chiori Hori, Huda Alamri, Jue Wang, Gordon Wichern, Takaaki Hori, Anoop Cherian, Tim K. Marks, Vincent Cartillier, Raphael Lopes, Abhishek Das, Irfan Essa, Dhruv Batra, Devi Parikh
+    </span><br />
+    <span class="conf">ICASSP 2019</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1806.08409">Paper</a>
+        <a target="_blank" href="http://video-dialog.com/">video-dialog.com</a>
+    </span>
+</p>
+<p><img src="/img/avsd/avsd_icassp.jpg" /></p>
+<hr />
+
+<p><a name="/eqa-modular"></a></p>
+<h2 class="pubt">Neural Modular Control for Embodied Question Answering</h2>
+<p class="pubd">
+    <span class="authors">Abhishek Das, Georgia Gkioxari, Stefan Lee, Devi Parikh, Dhruv Batra</span><br />
+    <span class="conf">CoRL 2018 (Spotlight)</span><br />
+    <span class="links">
+        <a target="_blank" href="https://arxiv.org/abs/1810.11181">Paper</a>
+        <a target="_blank" href="https://embodiedqa.org/">embodiedqa.org</a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=xoHvho-YRgs&amp;t=7330">Presentation video</a>
+        <a target="_blank" href="https://drive.google.com/open?id=1xTvgpVNxG7MPZQe6jtXuYUIT2WPtoh0U">Slides</a>
+    </span>
+</p>
+
+<p><img src="/img/eqa/eqa-modular.png" /></p>
+
+<hr />
+
+<p><a name="/embodied-qa"></a></p>
+<h2 class="pubt">Embodied Question Answering</h2>
+<p class="pubd">
+    <span class="authors">Abhishek Das, Samyak Datta, Georgia Gkioxari, Stefan Lee, Devi Parikh, Dhruv Batra</span><br />
+    <span class="conf">CVPR 2018 (Oral)</span><br />
+    <span class="links">
+        <a target="_blank" href="https://embodiedqa.org/paper.pdf">Paper</a>
+        <a target="_blank" href="https://embodiedqa.org/">embodiedqa.org</a>
+        <a target="_blank" href="https://github.com/facebookresearch/EmbodiedQA">Code</a>
+        <a target="_blank" href="//youtu.be/gz2VoDrvX-A?t=1h19m58s">Presentation video</a>
+        <a target="_blank" href="https://drive.google.com/open?id=1UacybW4p_8PDPNUvnEl05_89tbeG0ItP">Slides</a>
+    </span>
+    <!-- Press: -->
+    <div class="row pressdiv" style="margin: 5px 0 0 0; line-height: 1.4em;">
+        <a style="border-bottom: 0;" target="_blank" href="https://mlatgt.blog/2018/02/26/embodied-question-answering/">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0;">
+                <img src="/img/logos/mlgt.png" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"Embodied Question Answering" by Abhishek Das</span>
+            </div>
         </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
+        <a style="border-bottom: 0;" target="_blank" href="https://code.facebook.com/posts/1622140391226436/">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0;">
+                <img src="/img/logos/fair2.png" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"... a goal-driven approach to autonomous agents" by Dhruv Batra, Devi Parikh</span>
+            </div>
         </a>
-        <div id="modal-error"></div>
-      </div>
+        <a style="border-bottom: 0;" target="_blank" href="https://www.technologyreview.com/s/611040/facebook-helped-create-an-ai-scavenger-hunt-that-could-lead-to-the-first-useful-home-robots/">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 3px 0;">
+                <img src="/img/logos/mittechreview.svg" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"... an AI scavenger hunt that could lead to the first useful home robots" by Will Knight</span>
+            </div>
+        </a>
     </div>
-  </div>
+</p>
+
+<p><img src="/img/eqa/teaser.jpg" /></p>
+
+<hr />
+
+<h2 class="pubt">Evaluating Visual Conversational Agents via Cooperative Human-AI Games</h2>
+<p class="pubd">
+    <span class="authors">Prithvijit Chattopadhyay<sup>*</sup>, Deshraj Yadav<sup>*</sup>, Viraj Prabhu, Arjun Chandrasekaran, Abhishek Das, Stefan Lee, Dhruv Batra, Devi Parikh</span><br />
+    <span class="conf">HCOMP 2017</span><br />
+    <span class="links">
+        <a target="_blank" href="//arxiv.org/abs/1708.05122">Paper</a>
+        <a target="_blank" href="//github.com/VT-vision-lab/guesswhich">Code</a>
+    </span>
+</p>
+
+<p><img src="/img/guesswhich/teaser.jpg" /></p>
+
+<p><a name="/visdial-rl"></a></p>
+
+<hr />
+
+<h2 class="pubt">Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning</h2>
+<p class="pubd">
+    <span class="authors">Abhishek Das<sup>*</sup>, Satwik Kottur<sup>*</sup>, Stefan Lee, José M.F. Moura, Dhruv Batra</span><br />
+    <span class="conf">ICCV 2017 (Oral)</span><br />
+    <span class="links">
+        <a target="_blank" href="//arxiv.org/abs/1703.06585">Paper</a>
+        <a target="_blank" href="//github.com/batra-mlp-lab/visdial-rl">Code</a>
+        <a target="_blank" href="//www.youtube.com/watch?v=R4hugGnNr7s">Presentation video</a>
+        <a target="_blank" href="https://drive.google.com/open?id=0B70NAN5i4ZHSaVBESEFHQW9vUk0">Slides</a>
+    </span>
+</p>
+
+<p><img src="/img/visdial/qbot_abot.jpg" /></p>
+
+<hr />
+
+<h2 class="pubt">Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization</h2>
+<p class="pubd">
+    <span class="authors">Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi Parikh, Dhruv Batra</span><br />
+    <span class="conf">IJCV 2019, ICCV 2017, NIPS 2016 Interpretable ML for Complex Systems Workshop</span><br />
+    <span class="links">
+        <a target="_blank" href="//arxiv.org/abs/1610.02391">Paper</a>
+        <a target="_blank" href="https://github.com/ramprs/grad-cam">Code</a>
+        <a target="_blank" href="http://gradcam.cloudcv.org/">Demo</a>
+    </span>
+</p>
+
+<p><img src="/img/grad-cam/teaser.png" /></p>
+
+<p><a name="/visdial"></a></p>
+
+<hr />
+
+<h2 class="pubt">Visual Dialog</h2>
+<p class="pubd" style="margin-bottom:20px;">
+    <span class="authors">Abhishek Das, Satwik Kottur, Khushi Gupta, Avi Singh, Deshraj Yadav, José M.F. Moura, Devi Parikh, Dhruv Batra</span><br />
+    <span class="conf">PAMI 2018, CVPR 2017 (Spotlight)</span><br />
+    <span class="links">
+        <a target="_blank" href="//arxiv.org/abs/1611.08669">Paper</a>
+        <a target="_blank" href="//github.com/batra-mlp-lab/visdial">Code</a>
+        <a target="_blank" href="http://visualdialog.org/">visualdialog.org</a>
+        <a target="_blank" href="https://github.com/batra-mlp-lab/visdial-amt-chat">AMT chat interface</a>
+        <a target="_blank" href="http://demo.visualdialog.org">Demo</a>
+        <a target="_blank" href="//www.youtube.com/watch?v=I9OlorMh7wU">Presentation video</a>
+        <a target="_blank" href="https://drive.google.com/open?id=0B70NAN5i4ZHSTWhRTTlMdVVIcFU">Slides</a>
+    </span>
+</p>
+
+<p><img src="/img/visdial/teaser.png" /></p>
+
+<!-- <div id="vimeo-embed">
+    <iframe src="https://player.vimeo.com/video/193092429?byline=0&portrait=0&color=ffffff" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div> -->
+
+<hr />
+
+<h2 class="pubt">Human Attention in Visual Question Answering: Do Humans and Deep Networks Look at the Same Regions?</h2>
+
+<p class="pubd">
+    <span class="authors">Abhishek Das<sup>*</sup>, Harsh Agrawal<sup>*</sup>, C. Lawrence Zitnick, Devi Parikh, Dhruv Batra</span> <br />
+    <span class="conf">CVIU 2017, EMNLP 2016, ICML 2016 Workshop on Visualization for Deep Learning</span><br />
+    <span class="links">
+        <a target="_blank" href="//arxiv.org/abs/1606.03556">Paper</a>
+        <a target="_blank" href="https://abhishekdas.com/vqa-hat/">Project+Dataset</a>
+        <a target="_blank" href="https://github.com/abhshkdz/neural-vqa-attention">neural-vqa-attention</a>
+    </span>
+    <!-- Press: -->
+    <div class="row pressdiv" style="margin: 5px 0 0 0; line-height: 1.4em;">
+        <a style="border-bottom: 0;" target="_blank" href="http://nautil.us/issue/40/learning/is-artificial-intelligence-permanently-inscrutable">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0; line-height: 1.1em;">
+                <img src="/img/logos/nautilus.png" style="background: white; width: 57px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"Is Artificial Intelligence Permanently Inscrutable?" by Aaron Bornstein</span>
+            </div>
+        </a>
+        <a style="border-bottom: 0;" target="_blank" href="https://www.theverge.com/2016/7/12/12158238/first-click-deep-learning-algorithmic-black-boxes">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0;">
+                <img src="/img/logos/theverge.png" style="margin-right: 5px; background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"Deep learning is creating computer systems we don't fully understand" by James Vincent</span>
+            </div>
+        </a>
+        <a style="border-bottom: 0;" target="_blank" href="https://www.newscientist.com/article/2095616-robot-eyes-and-humans-fix-on-different-things-to-decode-a-scene/">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0;">
+                <img src="/img/logos/newscientist.jpg" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"Robot eyes and humans fix on different things to decode a scene" by Aviva Rutkin</span>
+            </div>
+        </a>
+        <a style="border-bottom: 0;" target="_blank" href="http://www.techradar.com/news/world-of-tech/robots-and-humans-see-the-world-differently-but-we-don-t-know-why-1324165">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 0;">
+                <img src="/img/logos/techradar.png" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"Robots and humans see the world differently – but we don't know why" by Duncan Geere</span>
+            </div>
+        </a>
+        <a style="border-bottom: 0;" target="_blank" href="https://www.technologyreview.com/s/601819/ai-is-learning-to-see-the-world-but-not-the-way-humans-do/">
+            <div class="col-lg-1 col-md-1 col-xs-2" style="padding: 3px 0;">
+                <img src="/img/logos/mittechreview.svg" style="background: white; width: 60px;" />
+            </div>
+            <div class="col-lg-11 col-md-11 col-xs-10">
+                <span class="presslink">"AI Is Learning to See the World—But Not the Way Humans Do" by Jamie Condliffe</span>
+            </div>
+        </a>
+    </div>
+</p>
+<p><img src="/img/vqa-hat/teaser.jpg" /></p>
+<hr />
+
+<p><a name="/talks"></a></p>
+
+<h1 id="talks">Talks</h1>
+
+<div class="row">
+    <div class="col-xs-6">
+        <p class="talkd">
+            <img src="/img/talks/visdial_rl_iccv17.jpg" />
+        </p>
+    </div>
+    <div class="col-xs-6">
+        <p class="talkd">
+            <img src="/img/talks/embodiedqa_cvpr18_4.jpg" />
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="talkt">
+            <a target="_blank" href="https://slideslive.com/38917625/tarmac-targeted-multiagent-communication">
+                ICML 2019 Imitation, Intent, and Interaction Workshop:
+                Targeted Multi-Agent Communication
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://www.facebook.com/icml.imls/videos/444326646299556/">
+                ICML 2019 Oral: Targeted Multi-Agent Communication
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://www.youtube.com/watch?v=WxYBp3Xr_Nc">
+                Allen Institute for Artificial Intelligence: "Towards Agents that can See, Talk, and Act"
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://www.youtube.com/watch?v=xoHvho-YRgs&amp;t=7330">
+                CoRL 2018 Spotlight: Neural Modular Control for Embodied Question Answering
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://youtu.be/gz2VoDrvX-A?t=1h19m58s">
+                CVPR 2018 Oral: Embodied Question Answering
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="http://on-demand.gputechconf.com/gtc/2018/video/S8582/">
+                NVIDIA GTC 2018
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://www.youtube.com/watch?v=R4hugGnNr7s">
+                ICCV 2017 Oral: Learning Cooperative Visual Dialog Agents with Deep RL
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://youtu.be/KAlGWMJnWyc?t=26m56s">
+                Visual Question Answering Challenge Workshop, CVPR 2017
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="https://www.youtube.com/watch?v=I9OlorMh7wU">
+                CVPR 2017 Spotlight: Visual Dialog
+            </a>
+        </div>
+        <div class="talkt">
+            <a target="_blank" href="http://techtalks.tv/talks/towards-transparent-visual-question-answering-systems/63026/">
+                Visualization for Deep Learning Workshop, ICML 2016
+            </a>
+        </div>
+        <!-- <p class="talkd"> -->
+            <!-- <a target="_blank" href="http://techtalks.tv/talks/towards-transparent-visual-question-answering-systems/63026/"><img src="/img/talks/vqahat_icml16_deepviz.png"></a> -->
+        <!-- </p> -->
+    </div>
+</div>
+<hr />
+
+<p><a name="/projects"></a></p>
+
+<h1 id="side-projects">Side projects</h1>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="http://aideadlin.es">aideadlin.es</a></h2>
+        <p class="talkd">
+            aideadlin.es is a webpage to keep track of CV/NLP/ML/AI conference deadlines. It's hosted on GitHub, and countdowns are automatically updated via pull requests to the data file in the repo.
+            <a target="_blank" href="http://aideadlin.es"><img style="margin-top: 10px;" src="/img/projects/ai-deadlines-1547012831.png" /></a>
+        </p>
+    </div>
 </div>
 
-</body>
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/neural-vqa-attention">neural-vqa-attention</a></h2>
+        <p class="talkd">
+            Torch implementation of an attention-based visual question answering model (Yang et al., CVPR16).
+            The model looks at an image, reads a question, and comes up with an answer to the question and a heatmap of where it looked in the image to answer it.
+            Some results <a href="https://computing.ece.vt.edu/~abhshkdz/neural-vqa-attention/figures/">here</a>.
+            <a target="_blank" href="https://github.com/abhshkdz/neural-vqa-attention"><img class="project-img" src="/img/projects/neural-vqa-attention.jpg" /></a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/neural-vqa">neural-vqa</a></h2>
+        <p class="talkd">
+            neural-vqa is an efficient, GPU-based Torch implementation of the visual question answering model from the NIPS 2015 paper 'Exploring Models and Data for Image Question Answering' by Ren et al.
+            <a target="_blank" href="https://github.com/abhshkdz/neural-vqa"><img src="/img/projects/neural-vqa.jpg" /></a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://erdos.sdslabs.co">Erdős</a></h2>
+        <p class="talkd">
+            Erdős by <a target="_blank" href="//sdslabs.co">SDSLabs</a> is a competitive math learning platform, similar in spirit to <a href="https://projecteuler.net/">Project Euler</a>, albeit more feature-packed (support for holding competitions, has a social layer) and prettier.
+            <a target="_blank" href="https://erdos.sdslabs.co"><img style="margin-top:10px;" src="/img/projects/erdos.jpg" /></a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/graf">graf</a></h2>
+        <p class="talkd">
+            graf plots pretty git contribution bar graphs in the terminal.
+            <code>gem install graf</code> to install.
+            <a target="_blank" href="https://github.com/abhshkdz/graf"><img style="margin-top:10px;" src="/img/projects/graf.gif" /></a>
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/HackFlowy">HackFlowy</a></h2>
+        <p class="talkd">
+            Clone of <a href="//workflowy.com">WorkFlowy.com</a>, a beautiful, list-based note-taking website that has a 500-item monthly limit on the free tier :-(. This project is an open-source clone of WorkFlowy. "Make lists. Not war." :-)
+            <a target="_blank" href="https://github.com/abhshkdz/HackFlowy"><img style="margin-top:40px;" src="/img/projects/hackflowy.png" /></a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/AirMaps">AirMaps</a></h2>
+        <p class="talkd">
+            AirMaps was a fun hackathon project that lets users navigate through Google Earth with gestures and speech commands using a Kinect sensor. It was the <a target="_blank" href="https://blog.sdslabs.co/2014/02/code-fun-do">winning entry in Microsoft Code.Fun.Do</a>.
+            <a target="_blank" href="https://github.com/abhshkdz/AirMaps"><img style="margin-top:10px;" src="/img/projects/airmaps.jpg" /></a>
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/sdslabs/hackview">HackView</a></h2>
+        <p class="talkd">
+            Another fun hackathon-winning project built during Yahoo! HackU! 2012 that involves webRTC-based P2P video chat, and was faster than any other video chat provider (at the time, before Google launched Hangouts).
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <h2 class="talkt" style="font-weight:300;"><a target="_blank" href="https://github.com/abhshkdz/8tracks-downloader">8tracks-downloader</a></h2>
+        <p class="talkd">
+            Ugly-looking, but super-effective bash script for downloading entire playlists from 8tracks. (Still works as of 10/2016).
+        </p>
+    </div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $('ul:gt(0) li:gt(12)').hide();
+    $('#read-more-button > a').click(function() {
+        $('ul:gt(0) li:gt(12)').show();
+        $('#read-more-button').hide();
+    });
+</script>
+
+<hr />
+
+
+    </section>
+</article>
+
+            </div>
+        </div>
+
+
+        <!-- Footer
+            ================================================== -->
+
+        <!-- Javascripts
+            ================================================= -->
+
+        <!-- Analytics
+        ================================================== -->
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-42127951-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
 </html>
