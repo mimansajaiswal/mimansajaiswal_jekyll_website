@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samyak Datta</title>
+    <description>This is Samyak Datta's personal website and blog
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 27 Jun 2020 15:49:42 -0400</pubDate>
+    <lastBuildDate>Sat, 27 Jun 2020 15:49:42 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Lessons from the Quill</title>
+        <description>&lt;p&gt;After I shared the &lt;a href=&quot;learning-opencv3-book&quot;&gt;news&lt;/a&gt; regarding my book going live for pre-order, a few people were curious to know about the details of how the entire publishing process operates. In this post, I talk about the “behind the scenes” of publishing and the lessons that I picked up along the way. I have chronicled my journey by dividing it into VI Acts, each describing a significant milestone in the process.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\cdots&lt;/script&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&lt;i&gt;Writing is easy: All you do is sit staring at a blank sheet of paper until drops of blood form on your forehead&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - Gene Fowler
+&lt;/p&gt;
+
+&lt;p&gt;The last time I wrote something technical, it was less than a quarter of the length of “Learning OpenCV 3 Application Development” and 24 credits along with a Masters degree were at stake. The 6 months, 9 chapters and 300+ pages have taught me more than I could ever have bargained for - about the subject, about writing and myself. Before the post starts, a few disclaimers are in order. This article is not representative of how the publishing industry operates in general. In fact, my experiences constitute a rather miniscule data point in the gigantic space of the publishing market. I have come to know that the variations, even within the sub-space of academic publishing, are reasonably high.&lt;/p&gt;
+
+&lt;h3 id=&quot;act-i---beginnings&quot;&gt;Act I - Beginnings&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&quot;Let’s start at the very beginning, a very good place to start…&quot;
+&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - R. Roders and O. Hammerstein, Do-Re-Mi, The Sound of Music
+&lt;/p&gt;
+
+&lt;p&gt;From the point of view of a prospective author, the publishing process usually starts with finding the right publisher to collaborate with. Let’s say that you have an idea for your next book, and maybe you’ve even got a few sample chapters penned down. The first (and possibly the hardest) step is to approach publishers and convince them to publish your work. Fortunately, in my case, things started off on a slightly different route. The folks at Packt Publishers reached out to me.&lt;/p&gt;
+
+&lt;p&gt;One fine morning, as I was pacing along the platform, waiting for my train to Andheri, I unlocked my phone to an email from an Acquisition Editor at Packt. She expressed her interest in discussing the possibility of a collaboration for a book on OpenCV/C++. I was pretty excited with the scope and prospects of the project as it gave me a chance to work at the intersection of two of my long-term passions — Vision and writing. Plus, the timing couldn’t have been better. I was on the verge of migrating from the industry to academics and therefore I wasn’t under too much work pressure at my then current job. Also, since I was to be the sole author of the book, it would provide me with a sense of total and complete ownership and simultaneously avoid potential creative clashes with co-authors. Not that I am opposed to collaborations, but I wanted to explore the entire spectrum of the publishing experience by myself through my first writing project. The conditions were opportune and I reverted with an enthusiastic yes.&lt;/p&gt;
+
+&lt;h3 id=&quot;act-ii---battle-plan&quot;&gt;Act II - Battle Plan&lt;/h3&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&quot;This day we fight! By all that you hold dear on this good earth, I bid you, stand, men of the West!&quot;
+&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - Aragorn at the Black Gates
+&lt;/p&gt;
+
+&lt;p&gt;Over the course of the next few email exchanges, the Publishers shared very specific ideas about their goals, how the book should be structured (at a very abstract level), the target audience, technology stack etc. Since this was my first rendezvous with “commercial” academic publishing, I had a lot of queries that they were more than willing to address.&lt;/p&gt;
+
+&lt;p&gt;The next big step was sharing a detailed “Book Outline”. The prospective authors are expected to share their vision and plan for the book with the Board of Editors via the “Book Outline” — a document that lays down the blue-prints for the book (a comprehensive battle plan). The outline that I shared took me an entire weekend to write and was around 8 pages long. As you delineate your target audience, objectives, mission, detailed chapter-wise outline and author-bio, this is a chance for you to be at your persuasive best. The final outline should resonate with the goal that the Publishers discussed earlier.&lt;/p&gt;
+
+&lt;p&gt;At this point, the Publishers will also share a target for the total number of pages that the book should span. I started out with a goal of ~250 pages and by the time the book reached a stage where it was ready to be published, it turned out to be 310 pages long!. It is the prospective author’s prerogative to divide the target number of pages into individual chapter page counts. As it turned out, this is an important exercise because it helps the Publishers frame deadlines (more on this in Act III).&lt;/p&gt;
+
+&lt;p&gt;This write-up is evaluated by a board of editors who get to decide the fate of your collaboration. Within a few days time, I got a call back from one of the Editors saying that they loved my ideas and we moved on to the next step.&lt;/p&gt;
+
+&lt;h3 id=&quot;act-iii---contract&quot;&gt;Act III - Contract&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&lt;b&gt;Sheldon&lt;/b&gt;: &lt;i&gt;It sounds like a, uh, contract might be in order.&lt;/i&gt; &lt;br /&gt;
+&lt;b&gt;Leonard&lt;/b&gt;: &lt;i&gt;Sure, we could write something up.&lt;/i&gt; &lt;br /&gt;
+&lt;b&gt;Sheldon&lt;/b&gt;: &lt;i&gt;But which one of us should be the party who ... &lt;/i&gt; &lt;br /&gt;
+&lt;b&gt;Howard&lt;/b&gt;: &lt;i&gt;You can do it, Sheldon.&lt;/i&gt; &lt;br /&gt;
+&lt;b&gt;Sheldon&lt;/b&gt;: &lt;i&gt;So stipulated!&lt;/i&gt; &lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - The Big Bang Theory (S09, E18)
+&lt;/p&gt;
+
+&lt;p&gt;The fate of your collaboration (and the book) is not sealed until the point the contract is signed. It is the single milestone that defines the beginning of your writing tenure under the aegis of the Publishers.&lt;/p&gt;
+
+&lt;p&gt;Like any other legal document, it had all the usual and tedious jargon. The things that interested me specifically were the clauses for the payment of the advance, royalties, copyright rules and the fact that the author is entitled to a fixed number (three) of free copies of the book. The contract also stipulates chapter-wise deadlines for submitting the 1st draft of each chapter in your book. These deadlines are calculated on the basis of the individual chapter lengths that were laid out in the “Book Outline”.&lt;/p&gt;
+
+&lt;p&gt;In my case, the chapter-wise deadlines were fixed at the rate of 2 pages per day which means that if I had laid down a plan of 30 pages for Chapter 1, I was given 15 days to to submit the 1st draft. As I would come to realise very soon, the overall writing process is extremely structured. As the submission dates for each chapter are known from the outset, you would know from the start when the first draft of each chapter is expected, the tentative release dates of your book etc. In short, academic publishing is the complete opposite of what George R. R. Martin is doing with ASOIAF series right now!&lt;/p&gt;
+
+&lt;h3 id=&quot;act-iv---grind&quot;&gt;Act IV - Grind&lt;/h3&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&quot;Do or do not. There is no try.&quot;
+&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - Master Yoda, Star Wars
+&lt;/p&gt;
+
+&lt;p&gt;After signing the contract, the authors are expected to start writing! I was introduced to a Content Development Editor (CDE) who remained in touch with me throughout the major parts of the project. The CDE will help you get started by setting up the entire workflow. At this point, you will be given instructions on how to set up your editor (tip: If someone from the publishing industry asks you about the text editor of your choice, do not say Vim!), where to share your completed drafts etc. I came to know about the “Track Changes” feature for Microsoft Word — it is essentially version control for text documents. Having never faced any serious collaborations over non-code documents, I found this quite neat!&lt;/p&gt;
+
+&lt;p&gt;This phase was, by far, the most intense and enjoyable part of my entire journey.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Writing a (technical) book doesn’t really fit into the idyllic image of epiphanies and creative revelations that hit you as you sit by the side of a meandering brook, absentmindedly stroking your beard as you scribble down verses and notes in your diary.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A closer image would be of a dishevelled lad, tearing at a packet of chips as he desperately claws at his keyboard at 3:30 in the night because well, deadlines. If you are working within deadlines set by the Publisher, then the days that you’d spend writing would be hard work. This is due to the fact that technical writing, for most authors, is part-time work. I was married to my regular job during the day, and I had to carve out time to woo writing by the night.&lt;/p&gt;
+
+&lt;p&gt;Like I said, I was sticking to a schedule which required me to push 2 pages per day (on an average). Although it sounds reasonable, given the fact that you are sending in supporting code snippets, diagrams, images and flowcharts along with the text. But maintaining this rate in a disciplined fashion throughout your entire writing tenure is hard, specially when you have to switch jobs and move to a different city in the midst of all this.&lt;/p&gt;
+
+&lt;p&gt;After penning down the “Book Outline”, there is a brief illusory phase where everything seems so simple and well-planned. After all, things were laid down bare in the Outline itself, how hard can expounding all the topics be? You just have to explain things in a bit more detail, thrown in a few code snippets here and there, and submit. Sounds easy, right? Reality hit me hard right at the very formative stages of Act IV. After an agonising 3 days of typing, I was staring at an incoherent jumble of sentences and paragraphs. I had no option, but to start all over again and this time around, I spent a lot of time micro-managing my set of topics by charting a logical and coherent route between them. A manifestation of “Things are easier said than done” made me realise that all elaborate plans look easy on paper. Thankfully, this was a skill that I picked up swiftly and my experience with the remaining chapters was much less tenuous which brings me to my next point.&lt;/p&gt;
+
+&lt;p&gt;In the process of writing, as I accrued more practice time (gained experience as time progressed), the lesser it took for me to write a fixed set of pages (the more efficient I became). Towards the final chapters, there were days when I managed to write as many as 5–6 pages in a single day — something that was unthinkable when I started out. In fact, I will go on to say that this is one of the most useful skills that I have picked up from the project. The prospect of writing and submitting multiple pages of text no longer perturbs me. I was watching a TED talk (whose link, I’m unfortunately unable to recall at the moment) where the speaker alluded to similar ideas and introduced the graph shown below.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+	&lt;img style=&quot;padding:10px;&quot; src=&quot;/image/practiceTimeGraph.png&quot; alt=&quot;Practice-Time Graph&quot; width=&quot;400&quot; height=&quot;400&quot; /&gt;
+	&lt;div class=&quot;figcpation&quot; style=&quot;color:#555; font-size:14px;&quot;&gt;
+		An ilustration of the practice-performance graph. The more practice that you accrue, the lesser time it takes to accomplish a fixed quanta of work.
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is called the “Practice-Performance graph”. On the &lt;script type=&quot;math/tex&quot;&gt;\mathbf{X}&lt;/script&gt;-axis, you have the time that you have devoted to your (long-term) task and the corresponding &lt;script type=&quot;math/tex&quot;&gt;\mathbf{Y}&lt;/script&gt;-value will give you the amount of time it would take you to perform a fixed quanta of similar work.&lt;/p&gt;
+
+&lt;p&gt;So, I just talked about the importance of meticulous planning in writing. In fact, before starting out with the Grind, I sifted through tons of self-help tips for managing writing projects. Almost all of them had similar tips to offer — plan extensively before you write your first word. However, there is yet another, rather orthogonal skill that I picked up.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Some of your best ideas will come to you after you actually start writing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There is a limit to the granularity level to which you can plan your ideas before you actually begin pumping words. Sure, I had a list of topics and checkpoints that I wanted to write about for every chapter accompanied by a rough path mapped out among them. However, while penning down the draft for a topic, I realised that the best results appear when you go in with an open-mind. I rarely started out writing a section with all ideas pre-formed in my head. They kept coming to me as the words poured out. Gradually, I realised that most of the writing process was like walking a tight-rope between the two approaches — sticking to the plan and letting your mind wander in creative territories. In some sense, a writer similar to a reinforcement learning agent — aching to find that perfect balance between exploration of the unknown and exploitation of that charted, deterministic course.&lt;/p&gt;
+
+&lt;h3 id=&quot;act-v---review-and-wrap-up&quot;&gt;Act V - Review and Wrap-Up&lt;/h3&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&quot;Dig that hole, forget the sun. And when at last the work is done, don’t sit down, it’s time to dig another one&quot;
+&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - &quot;Breathe&quot;, Pink Floyd
+&lt;/p&gt;
+
+&lt;p&gt;During Act IV, as and when you keep on submitting your 1st drafts to the CDE, they simultaneously pass the same to the Technical Reviewers (TRs). The TRs submit their comments and reviews which are targeted at the technical content of the body of work. When the author is finally done with the 1st draft of all chapters, they are expected to immediately start off with the second iteration of reviewing and addressing the aforementioned comments. This obviously, does not take as much time as the writing itself. I remember completing the entire review process in about a couple of weeks.&lt;/p&gt;
+
+&lt;p&gt;One of the major challenges while writing was to explain technical concepts while simultaneously not losing sight of the big picture. How do you explain a 2-D Gaussian box filter to your readers when all they might be interested in is applying a cool Instagram-like effect to their images? Moreover, if a book is targeted for beginners (as is the case with mine), it becomes an incredibly potent tool that can shape the perspectives of a complete novice in the subject matter. It doesn’t help if the text gets so caught up with all the “fighting in the trenches” that your audience forgets their initial motivations. I believe that maintaining this balance is a fairly transferable skill that can be mapped to any creative domain. The TRs did a fantastic job in helping me understand (through their feedback and comments) and identify places where I was getting too caught up in the low-level details. Overall, Act V was instrumental in ironing out such occasional perturbations in the flow of the book.&lt;/p&gt;
+
+&lt;p&gt;After the Review was done, all that remained was tying up some lose ends — making sure all diagrams/flowcharts are proper, going through the PDFs to see how the Chapters would look in the final version and uploading the bundle of code/software.&lt;/p&gt;
+
+&lt;h3 id=&quot;act-vi---finish-line&quot;&gt;Act VI - Finish Line&lt;/h3&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;
+&quot;And now, the end is near. And so I face, the final curtain” 
+&lt;/p&gt;
+&lt;p style=&quot;text-align: right;&quot;&gt;
+ - &quot;My Way&quot;, Frank Sinatra
+&lt;/p&gt;
+
+&lt;p&gt;At the time of writing this post, I am happy to say that the book has been published and is available for order (both the e-book and the print version) from the Publisher’s &lt;a href=&quot;https://www.packtpub.com/application-development/learning-opencv&quot;&gt;website&lt;/a&gt;. It is scheduled to be available on Amazon soon. Also, all the supporting code snippets are open-source and available on &lt;a href=&quot;https://github.com/PacktPublishing/Learning-OpenCV-3-Application-Development&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now, I’m at a stage where I have absolutely no clue how about how the book will perform commercially. The future holds a giant question mark over my head. But, over the course of the last few months of painstaking labour, I have made an important realisation — “Books that don’t sell well are just as hard to write as books that do make money.” This makes you respect creative work.&lt;/p&gt;
+
+&lt;p&gt;Every morning, I started with a blank page and by the end of the day, I had filled it with words, numbers, symbols and diagrams. As I sit amid the lengthening shadows of a cold winter evening, I can’t help but reminisce that feeling of being reborn everyday.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Dec 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2016/12/lessons-from-quill</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/12/lessons-from-quill</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Learning OpenCV 3 Application Development</title>
+        <description>&lt;p&gt;I am excited to announce that my first book - “Learning OpenCV 3 Application Development” is now available for pre-order on Packt Publishers’ &lt;a href=&quot;https://www.packtpub.com/application-development/learning-opencv-3-application-development&quot;&gt;website&lt;/a&gt; as well as &lt;a href=&quot;https://www.amazon.in/Learning-OpenCV-Samyak-Datta-ebook/dp/B01IF8J2CK&quot;&gt;Amazon&lt;/a&gt;!&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+	&lt;img style=&quot;padding:10px;&quot; src=&quot;/image/learning_opencv3_cover.jpg&quot; alt=&quot;Learning OpenCV 3 - Cover&quot; width=&quot;300&quot; height=&quot;400&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Over the last few years, Computer Vision (and AI, in general) seems to have taken the world by storm! We are in the midst of self-driving cars, our smartphone apps somehow seem to already know the content of our photos and they even seggregate them into albums on the basis of that! This is indeed a great time to be alive! But where does someone who wants to start out with the absolute basics go? &lt;em&gt;Learning OpenCV 3 Application Development&lt;/em&gt; is meant to serve as a gentle introduction into the world of Image Processing (IP), Computer Vision (CV) and Machine Learning (ML) using my favorite combination of OpenCV and C++.&lt;/p&gt;
+
+&lt;p&gt;OpenCV recently came out with its 3.x version which changed the landscape by a significant measure. There has been a non-trivial amount of modifications to the ML module (among other small changes). Also, SIFT and SURF have been moved to the &lt;code class=&quot;highlighter-rouge&quot;&gt;opencv_contrib&lt;/code&gt; repository. This has rendered a lot of the current literature on this topic obsolete. The book is based on the latest, and the currently most popular (as of August 2016) version - 3.1. The best part about the book is that it doesn’t assume any prior IP/CV/ML knowledge. If you have a basic, working knowledge of C++ and a proclivity to explore, you are good to go! This makes it ideal for students, professionals or inter-disciplinary researchers who want to enter into the exciting world of “Visual Learning” and need a good place to build their foundations.&lt;/p&gt;
+
+&lt;p&gt;The book starts off with the absolute basics - pixels, color spaces and channels and by the end of the ~250 page journey, you would be writing algorithms that perform some fairly sophisticated visual analysis such as predicting the gender of a person by looking at the image of his/her face! Here is a very brief, chapter-wise gist of what you can expect.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 1&lt;/strong&gt; : Image Processing Basics, fundamental OpenCV data structures (Mat, Point, Scalar etc) and your first, “Hello World program”. Pixel-wise traversal of images through the Mat object, implementation of image enhancement algorithms as a practical use-case of pixel-wise image traversals.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 2&lt;/strong&gt; : Introduction to slightly more challenging form of image enhancement techniques, the concept of image filters and convolution. First contact with the all-important and ubiquitous Gaussian distribution, image smoothing (using Box and Gausian filters). We also implement a cool image enhancement hack that is found in apps such as Instagram!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 3&lt;/strong&gt; : Image thresholding ad the concept of binary images. We also discuss some common morphological operations such as erosion and dilation which are performed as post-processing step after thresholding algorithms.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 4&lt;/strong&gt; : From working at a per-pixel level, we move to the concept of aggregating pixel values into histograms. This chapter discusses how to build histograms from grayscale as well as RGB images and also some cool stuff you can do with them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 5&lt;/strong&gt; : Moving upwards from pixel-based transformations, we now enter the domain of what is called - “mid-level vision”. We discuss the concept of image derivatives and see how derivatives can help us in detecting edges in images.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 6&lt;/strong&gt; : This is one of the most exciting chapters in the book where we get to witness OpenCV’s true power as it compresses fairly complicated algorithms for a difficult task such as face detection into a single line of API code! You would learn to appreciate the fact that tasks which are trivial for human beings (such as detecting and recognizing faces), often involve a fair amount of number crunching and processing for computers. In fact, this is a theme that would be reinforced throughout the remaining parts of the book.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 7&lt;/strong&gt; : Having detected faces, we now look at some affine Transformations and their applications in pre-processing the face images. We essentially make the faces ready for the subsequent feature extraction steps.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 8&lt;/strong&gt; : Image descriptors - tools for converting images from a matrix of pixel intensities to a vector of real-values features. Specifically, we discuss and implement local binary pattern (LBP) features.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Chapter 9&lt;/strong&gt; : Machine Learning with OpenCV - supervised and unsupervised learning, kMeans, kNN, SVMs, overfitting, validation and PR curves. We demonstrate how to apply the feature vectors from Chapter 8 to the ML algorithms discussed here and build a facial gender detection system.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The book is more than a simple collection of chapters. It contains tips, tricks and other nuggets of information that I have picked up over the years as a result of my experiences with the library. Scattered across the text, you will find useful information that I wish somebody had told me when I had started out. I have tried to strike a balance between exposition of the subject matter, code samples that demonstrate the theory in action and a chronicle of a few “good practices” sampled from my own experiences. It is due to these reasons that the project is quite close to my heart. As of August 2016, I have been working on the first draft since the last 3 months. My tryst with OpenCV began in my final year in college while I was working towards my Masters thesis. The book, I believe, is my way of giving back to the wonderful community!&lt;/p&gt;
+
+&lt;p&gt;Since this is my very first book, some mistakes may have inadvertently crept in. Please feel free to shoot an email in case you notice any error(s). Constructive criticism is always welcome. Happy reading!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2016/08/learning-opencv3-book</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/08/learning-opencv3-book</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>A Bay of Contradictions</title>
+        <description>&lt;p&gt;This is a short piece of fiction that I wrote. It was originally published on &lt;a href=&quot;https://medium.com/@samyakdatta/a-bay-of-contradictions-ffaef38201a9#.vxwtiwix3&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img style=&quot;padding:10px;&quot; src=&quot;/image/MarineDrive.jpg&quot; alt=&quot;&quot; width=&quot;900&quot; height=&quot;300&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Every Sunday evening, as the sun makes its way towards the horizon, splashing the skies with a wine-coloured hue, I immerse myself in a book and the world around me goes about with its usual business. Afternoon has passed, but the evening is not yet upon us in its full glory. The city seems to be waking up from its slumber and is perched on the edge of something exciting. The microcosm of life unfolds on the promenade behind my back. Hyper-active kids chasing each other, shouts of warning coming from their guardians, fitness enthusiasts staring straight ahead with mute determination and couples and groups lost within their own clique of stories, gossip and laughter.&lt;/p&gt;
+
+&lt;p&gt;A voice breaks the cognitive rapport with my book that I had fought so hard to establish. “&lt;em&gt;What are you reading?&lt;/em&gt;”. I turned to the source of inquiry. He seemed to be a guy in his early 30s who had just finished with his evening run and was cooling himself off. Tiny, little drops of perspiration plastered the flailing, thin hair to his scalp. Donning a white polo shirt, blue shorts and some sort of a contraption that snugly fit around both his knees, he seemed to be the kind of person who took his fitness seriously. As he shifted into a more comfortable demeanour, I noticed the plastic-encased iPod strapped to his biceps using a Velcro harness. The monsoons seem to bring about an increase in people’s compassion for their gadgets along with the humidity levels.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Oh, it’s a book on Ramanujan — the Indian mathematician. The Man Who Knew Infinity&lt;/em&gt;”, I said as I flipped the front cover so that it faces him.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Ah! There is a movie based on this as well, I guess. You could have saved yourself some time&lt;/em&gt;”, came the reply.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;I probably won’t end up watching the movie. I thought I might as well give this a read&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Not a movie enthusiast, eh?&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;I forced a laugh hoping he would deduce the answer from my non-verbal cues. I prefer not to indulge strangers into details of my dismal movie watching record when I am talking to them for the first time, especially the ones I’ve known for literally 20 seconds.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;So, you work here?&lt;/em&gt;”, I asked him and then immediately regretted my desperation to fill in awkward silences. Small talk has never been my forte.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;I work in Mumbai and live in Bombay&lt;/em&gt;”, the guy mused.&lt;/p&gt;
+
+&lt;p&gt;I looked at him and was rather taken aback to hear the depth of the ocean reflect in his voice. “&lt;em&gt;There is something about rivers and seas that stirs the poet within you&lt;/em&gt;”,he added rather apologetically. “&lt;em&gt;What about you? What’s your story?&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;I told him my “story” — where I grew up, where I went to study and how I ended up in Bombay. There was a brief pause after I stopped speaking during which both of us watched a couple experiment with all permutations of camera poses and orientations, some of which involved hanging precariously over the edge.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;The sheer infinity of the oceans helps me contemplate.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;What are you contemplating right now?&lt;/em&gt;”. His question made me realise that I had articulated my thoughts out loud. The sea works it’s magic in mysterious ways. I tore my gaze away from the vast expanse of blue-grey and turned to face him. I could sense a hint of genuine interest on his behalf.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Well, it’s the age-old question. Why is Mumbai so revered? What makes this city so like-able?&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;And what have you come up with so far?&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;I think that it is really difficult to hold an objective conversation on this topic. Man will forever tilt in favour of the land that he feels the most attached to. For every person, there will always be a place that is above criticism. And logic remains shrouded when you view things from a pedestal of elitism.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Go on. I have a feeling this leads up to something&lt;/em&gt;”, he urged me with a certain degree of infectious enthusiasm. And on I went.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Take real-estate, for example. Finding a space for yourself, that little expanse of land that you can claim as your own is a challenge that diminishes commas in your bank balance. You know you have serious problems when the airport not only stands in the middle of the city, but also rubs shoulders with the slums. Keeping children and dogs from scaling airport walls isn’t the most optimal utilisation of C.I.S.F. personnel when there are more serious things in an international airport that could go wrong.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Ah! real-estate. Attack your opponent where he’s the weakest.&lt;/em&gt;”, he quipped and both of us shared a laugh.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;You say that the city is short of space. Couldn’t agree with you more. The ever-increasing influx of people scavenge the city to claim the last remaining expanse of land. Free space is burnt down faster than a splinter with its end on fire. But Mumbai always manages to magically conjure up unfettered space for the dreams of the poor and ambitions of the rich.&lt;/em&gt;”, he added with the flair of an artist applying the concluding touches to his canvas.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Not only real-estate, man. There is so much more. Each jerk on the road reminds you of the infrastructure crumbling under the expectations of its populace. The horns blaring from the smoke-spewing vehicles at every signal spell out an eulogy of discipline and order. Life hangs on the edge here and you have to only set foot on the Virar-Churchgate local to grasp the truth behind this phrase! And don’t even get me started on the weather. The city drowns itself in it’s annual barrage every monsoon and the roads become as suffocating as the air. A respite from the monotony of heat eludes the city. It’s hot for 8 months and hot and humid for the remaining 4. As a resident of the north, I often times miss the winds of winter biting my skin. Call me a cynic, but this city has bitten off more than it can chew.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;My rant was followed by another momentary pause, longer than the previous one. A delicate breeze blew into our faces. In the distance, I witnessed the waves crash into to the rocks below. A group of people who had ventured too close to the waters were soaked in it’s saline foam. The wind carried their squeals of disgust as I imagined their faces contorting into scowls. The water at the shores of Marine Drive is obnoxiously filthy.&lt;/p&gt;
+
+&lt;p&gt;The guy cleared his throat and I snapped back from my reverie. “&lt;em&gt;What are your views?&lt;/em&gt;”, I asked handing him the gears of the conversation. He took a rather long time before he opened his mouth.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;I like to view Mumbai as a prism.&lt;/em&gt;”. An emphatic pause followed as I looked on intently. There was something really captivating about his countenance. I was hooked.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;A prism that splits your gaze into alternating visions of the opulence of the rich and the frugality of the poor, of Victorian facades and the dilapidated walls of a chawl. The arms of the ocean entering into the city at each bay divides the land into two — a dichotomy between the timeless and the time-bound, the universal and the particular. Bombay and Mumbai&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;The sea has definitely brought forth the poet in you!&lt;/em&gt;”. I sat there, amazed.&lt;/p&gt;
+
+&lt;p&gt;He didn’t seem to hear me and continued. “&lt;em&gt;When you look around, you seek the grim faces lit by fluorescent screens inside shining cars, but my eyes are fixed on the brown, freckled and dust-caked laugh of the boy selling strawberries by the road. The cacophony on the streets and the quiet, sophisticated humdrum inside rooftop cafes are interleaved and stitched together to weave the fabric of time and space. When I look around, I see a confluence of saffron and green, and black and yellow where mankind’s penchant for the veneration of the theatrical art is matched only by the exaltation of their heroes.&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;p&gt;His thoughts were intercepted by a man advertising his wares in a crude nasal voice. We made our purchases and the flow resumed. Each of his words now hit my face laden with the fragrance of crushed peanuts.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Egos are pinned down by the realisation that each passer-by is living a life as vivid and complex as your own, that the stragglers of yesterday are the heroes of today’s act. When I travel inside a packed compartment, a momentary glimpse into the screen of my neighbour is a single frame of an elaborate movie. I have found passageways to thousands of similar lives that I never knew existed. This realisation is the root of a Mumbaikar’s tenacity to persevere.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;He stopped. The words seemed to have taken a greater toll on him than the run.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Wow! That was eloquent. You see, just like you, authors, poets and artists have relentlessly poured out their endless fascination for Mumbai. There are tons of literature that romanticise life here. All I’m saying is that we are turning a deaf ear to the city’s desperate pleas of help.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Absolutely! I am not denying a single argument that you put forth. At this scale, there is naught but doom for the city.&lt;/em&gt;” His face lit up momentarily, as if an idea that just crossed his mind. “&lt;em&gt;Hey! You aren’t one of the guys from Humans of Bombay, are you?&lt;/em&gt;”, he asked with an expectant smile on his face.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Sorry to disappoint you, but no. Although I wish I knew them. Why do you ask?&lt;/em&gt;”, I threw him a puzzled look.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Because, both sides of this story needs to reach people.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;But, there is hardly any story here!&lt;/em&gt;”&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;Well, what are stories if not conversations decorated with context&lt;/em&gt;”, he said and stood up to leave.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\cdots&lt;/script&gt;
+
+&lt;p&gt;Neither of us exchanged names or contact details. We were just the two of us in our own skins — a cynic and an optimist, a pragmatist and a dreamer, an engineer and a poet. Our paths had crossed because of a stroke of serendipity and we both knew that we would probably never get a chance to meet again. There are rarely any second encounters in this city. You appear only once, as an extra sipping coffee in the background, as a blur of traffic passing on the highway, as a lighted window at dusk.&lt;/p&gt;
+
+&lt;p&gt;I took a sip from my bottle and washed down the lingering after-taste of optimism that the conversation left behind. I realised that this was precisely the reason why the inhabitants of Bombay endured. Why, albeit so many problems, the city has found nothing but awe in my heart. Like jilted lovers unable to find closure, the people keep coming back. Ready to be let down again one more time with the self-imposed acceptance that there can be no passion without pain. Civic problems were merely the eccentricities that adorned the rock-star on stage, making him more like-able amid his fans. Complaints, cribbing, tantrums, adulation and reminiscence— the wheel of emotions shall twirl a thousands time over. Ad infinitum.&lt;/p&gt;
+
+&lt;p&gt;As the sun saunters and disappears into the horizon, a velvet dusk envelops the city. The hues of the sky whisper a beautiful warning. But, darkness has never been the enemy. The city embraces the night with the same philanthropic spirit that it nurtures the fortunate and the helpless because it knows that dawn will usher a new hope for the city where your spirit will break into a thousand dances every single day.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2016/06/a-bay-of-contradictions</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/06/a-bay-of-contradictions</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>On Interviewing</title>
+        <description>&lt;p&gt;It has been more than a few months since I have been involved with tech-interviews. This time, from the other side of the table. This post is a chronicle of an interesting anecdote that took place during one of my interviews.&lt;/p&gt;
+
+&lt;p&gt;Anyone who has spent a non-trivial time with interviews will know that the discussion eventually comes to “So, do you have any questions for me?”. This is aimed at extending the basic courtesy of one-to-one communication - give the other party an opportunity to shift gears and steer the communication for a while. On top of that, the kind of questions that the candidate is putting forth can drop subtle implications about the candidate’s sincerity. Unfortunately, in the type of interviews I have been a part of (algorithmic phone-screens), the verdict for the candidate has already been passed (albeit, unofficially in my head) by the time our conversation reached to a point where we discuss the candidate’s queries. There was no way that an interviewee could ask a question so thought provokingly intense that it makes me go: “Damn! He was clumsy with minimum spanning trees, but this dude asked all the right questions! Instant hire!” Or so I thought.&lt;/p&gt;
+
+&lt;p&gt;This brings me to the specific incident in discussion. After a successful round of interviewing, we reached the point where I put forth my question. By successful, I mean an interaction where the candidate is able to navigate himself to the solution and the onus of correcting and re-routing him when he shoots off a tangent is lifted off me. Now, by this time, I am in no mood to engage my mental faculties (if you feel solving problems is difficult, try debugging and countering someone’s solution in real-time during an interview) and I offer an opportunity for him to satiate his curiosity about the company. I have the standard responses to the virtually static set of inquiries that I have come across so far ready in my head - “What are the technologies that you guys use?”, “If I’m selected, which team will I be joining” or “How long do I have to wait to get the results” et al. And that is when he comes up with this stunner - “How long do you see yourself working at Directi?”&lt;/p&gt;
+
+&lt;p&gt;At the outset, this looks like a awfully personal question and that too a question without a clear black and white answer. But, if we convince ourselves to look past the veneer of it’s literal translation, it’s sharp nuances have the potential to excavate a ton of information. For instance, an honest answer to this can reveal the employee’s perception of the company and it’s work culture and the degree to which an individual’s expectation from his/her job resonates with that of the organization. How does an employee view his current role and where does it fit into the timeline of his career? Is he here to use his time as an excuse to seek better alternatives or does he truly care about the expansion of his skill set and can he relate to the mission and vision of his employer? While some of the aforementioned things may not be clear from the content of the interivewer’s answer, there is a lot to be learnt from non-verbal cues. Starting from the obvious facts like employee satisfaction  and attrition rates to the more subtle facets, this question can bring forth so many layers to the conversation.&lt;/p&gt;
+
+&lt;p&gt;And I believe that for a candidate, nothing can be a richer source of information than this. Is it really necessary for him/her to know whether we use Redis or Memcached as our data store? No. Or are they so impatient to hear back from the HR that the only question they can ask a software engineer is about the tentative dates of receiving the interview feedback when the interview hasn’t officially even reached in conclusion yet? These sort of questions and their ilk pale in comparison to the more articulate and nuanced ones.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I was not expecting such a short, powerful and mature question (given the fact that he was a fresher). I was off-seated for a moment, blinking at the speaker phone like a deer caught in a headlight as I heard the sound of the tables in the conversation being turned. To the candidate on the other side, if you are reading this: for that ephemeral moment, you had me. Full points for your expression of curiosity!&lt;/p&gt;
+
+&lt;p&gt;If you liked this post, you can &lt;a href=&quot;https://twitter.com/intent/tweet?url=http://localhost:4000/blog/2016/03/on-interviewing&amp;amp;text=On Interviewing&amp;amp;via=samyakdatta&quot; target=&quot;_blank&quot;&gt; share it with your followers&lt;/a&gt;!&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2016/03/on-interviewing</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/03/on-interviewing</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Book Bucket List</title>
+        <description>&lt;div class=&quot;message&quot;&gt;
+    This is a curated list of all the books that I plan to read in the near future. I will keep on updating this list with short reviews of the books, as and when I complete them.
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;s&gt;1984 by George Orwell&lt;/s&gt;
+    &lt;p&gt;A brilliant narration of a dystopian communist society. The book is marked by a gloomy chain of events describing the atrocities of an overlord organization governing it’s citizens that persist throughout a major portion of the story. The pessimism of the story-line is punctuated in places by the protagonists’ hopefulness, whose momentum is, unfortunately, unable to persist till the end. This is one of those novels that do not end on a positive note, leaving behind a concoction of despair and regret.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;To Kill a Mockingbird by Harper Lee&lt;/s&gt;
+    &lt;p&gt;This was one rare educating, entertaining, thought provoking and pause-once-in-a-while-and-ponder literary masterpiece that I had the pleasure of coming across. The fact that the book manages to convey important lessons against racial prejudice while being amusingly entertaining at the same time is a proof of the author’s genius. For a story being narrated from the point-of-view of a 10 year girl struggling to figure out the rules of the adult world, “To Kill a Mockingbird” offers some profound insights into human nature that transcend cultural and religious barriers and have stood the test of time to be relevant even today.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Kafka on the Shore by Haruki Murakami&lt;/s&gt;
+    &lt;p&gt;This was my first by Murakami and my feelings towards this book are very much like the story-line: convoluted. The opening pages of the book have all the ingredients of a gripping thriller. The faced-paced narrative does complete justice to the initial chapters making the reader’s expectations shoot to absurdly high levels. Unfortunately, the pages run out before you are able to make sense of the raging entangled mess of metaphors that the once gripping story has turned into.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Shantaram by Gregory David Roberts&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Norwegian Wood by Haruki Murakami&lt;/s&gt;
+    &lt;p&gt;A much simpler and succint story in comparison to Kafka on the Shore (maybe Kafka was beyond my cognitive prowess!). On the surface, this appears to be yet another book describing the life and tribulations of a young university student in Japan revolving around booze, relationships, casual hook-ups and sex. However, scratching the flaky exterior triggers a landslide of feelings. The only way to understand and appreciate the book is to grasp the gravity of the emotions shared among the characters. And that is possible only by immersing one’s self in the world of Toru Wantabe.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Battle Hymns of the Tiger Mother by Amy Chua&lt;/s&gt;
+    &lt;p&gt;As an outlier (by genre) in my this year’s collection, Amy Chua’s satirical memoir was an interesting read. The motivation’s for it’s inclusion into my list stemmed from the widespread controversy it had managed to attract from almost all parts of the world. The book discussses Chinese parenting by drawing parallels with how Western (especially US) parents raise their kids. Inspite of the fact that the entire book is about the life of a Chinese mother struggling to raise two progiduous daughters, the author manages to keep the narrative refreshingly entertaining. Hailing from India, a place where parenting styles are an average of the Chinese and the Western way, I could relate to and agree with a lot of her opinions and found some of them too overbearing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kite Runner by Khaled Hosseini&lt;/li&gt;
+  &lt;li&gt;War and Peace by Leo Tolstoy&lt;/li&gt;
+  &lt;li&gt;The Brothers Karamazov by Fyodor Dostoyevsky&lt;/li&gt;
+  &lt;li&gt;The Potrait of a Lady by Henry James&lt;/li&gt;
+  &lt;li&gt;Pride and Prejudice by Jane Austen&lt;/li&gt;
+  &lt;li&gt;Animal Farm by George Orwell&lt;/li&gt;
+  &lt;li&gt;Lolita by Vladimir Nabokov&lt;/li&gt;
+  &lt;li&gt;The Catcher in the Rye by J.D. Salinger&lt;/li&gt;
+  &lt;li&gt;Dracula by Bram Stroker&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you liked this post, you can &lt;a href=&quot;https://twitter.com/intent/tweet?url=http://localhost:4000/blog/2015/08/book-bucket-list&amp;amp;text=Book Bucket List&amp;amp;via=samyakdatta&quot; target=&quot;_blank&quot;&gt; share it with your followers&lt;/a&gt;!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 17 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2015/08/book-bucket-list</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/08/book-bucket-list</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

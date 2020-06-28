@@ -1,0 +1,21 @@
+---
+layout: post
+comments: true
+title: On Interviewing
+---
+
+It has been more than a few months since I have been involved with tech-interviews. This time, from the other side of the table. This post is a chronicle of an interesting anecdote that took place during one of my interviews. 
+
+Anyone who has spent a non-trivial time with interviews will know that the discussion eventually comes to "So, do you have any questions for me?". This is aimed at extending the basic courtesy of one-to-one communication - give the other party an opportunity to shift gears and steer the communication for a while. On top of that, the kind of questions that the candidate is putting forth can drop subtle implications about the candidate's sincerity. Unfortunately, in the type of interviews I have been a part of (algorithmic phone-screens), the verdict for the candidate has already been passed (albeit, unofficially in my head) by the time our conversation reached to a point where we discuss the candidate's queries. There was no way that an interviewee could ask a question so thought provokingly intense that it makes me go: "Damn! He was clumsy with minimum spanning trees, but this dude asked all the right questions! Instant hire!" Or so I thought.
+
+This brings me to the specific incident in discussion. After a successful round of interviewing, we reached the point where I put forth my question. By successful, I mean an interaction where the candidate is able to navigate himself to the solution and the onus of correcting and re-routing him when he shoots off a tangent is lifted off me. Now, by this time, I am in no mood to engage my mental faculties (if you feel solving problems is difficult, try debugging and countering someone's solution in real-time during an interview) and I offer an opportunity for him to satiate his curiosity about the company. I have the standard responses to the virtually static set of inquiries that I have come across so far ready in my head - "What are the technologies that you guys use?", "If I'm selected, which team will I be joining" or "How long do I have to wait to get the results" et al. And that is when he comes up with this stunner - "How long do you see yourself working at Directi?"
+
+At the outset, this looks like a awfully personal question and that too a question without a clear black and white answer. But, if we convince ourselves to look past the veneer of it's literal translation, it's sharp nuances have the potential to excavate a ton of information. For instance, an honest answer to this can reveal the employee's perception of the company and it's work culture and the degree to which an individual's expectation from his/her job resonates with that of the organization. How does an employee view his current role and where does it fit into the timeline of his career? Is he here to use his time as an excuse to seek better alternatives or does he truly care about the expansion of his skill set and can he relate to the mission and vision of his employer? While some of the aforementioned things may not be clear from the content of the interivewer's answer, there is a lot to be learnt from non-verbal cues. Starting from the obvious facts like employee satisfaction  and attrition rates to the more subtle facets, this question can bring forth so many layers to the conversation. 
+
+And I believe that for a candidate, nothing can be a richer source of information than this. Is it really necessary for him/her to know whether we use Redis or Memcached as our data store? No. Or are they so impatient to hear back from the HR that the only question they can ask a software engineer is about the tentative dates of receiving the interview feedback when the interview hasn't officially even reached in conclusion yet? These sort of questions and their ilk pale in comparison to the more articulate and nuanced ones.
+
+To be honest, I was not expecting such a short, powerful and mature question (given the fact that he was a fresher). I was off-seated for a moment, blinking at the speaker phone like a deer caught in a headlight as I heard the sound of the tables in the conversation being turned. To the candidate on the other side, if you are reading this: for that ephemeral moment, you had me. Full points for your expression of curiosity!
+
+
+
+{% include twitter_share.html %}
